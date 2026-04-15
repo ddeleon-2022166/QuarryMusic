@@ -15,12 +15,6 @@
             </a>
         </div>
 
-    <div class="nave-center">
-        <div class="search-container">
-            <input type="text" id="main-search" placeholder="¿Qué disco buscas?" onkeyup="ejecutarBusqueda()">
-        </div>
-    </div>
-
         <div class="nave-right">
 
             <a href="login.html">
@@ -321,28 +315,6 @@
         &copy; 2026, Quarry Music. Todos los derechos reservados.
     </div>
 </footer>
-    <script>
-function ejecutarBusqueda() {
-    // 1. Obtener lo que el usuario escribió
-    let input = document.getElementById('main-search').value.toLowerCase();
-    
-    // 2. Seleccionar todas las tarjetas de productos
-    let tarjetas = document.getElementsByClassName('product-card');
-
-    // 3. Recorrer cada tarjeta
-    for (let i = 0; i < tarjetas.length; i++) {
-        // Obtenemos el texto del título dentro de la tarjeta
-        let titulo = tarjetas[i].querySelector('.product-title').innerText.toLowerCase();
-        
-        // 4. Si el título incluye lo que escribimos, se queda. Si no, se oculta.
-        if (titulo.includes(input)) {
-            tarjetas[i].style.display = "block";
-        } else {
-            tarjetas[i].style.display = "none";
-        }
-    }
-}
-        </script>
     </body>
 </html>
 
