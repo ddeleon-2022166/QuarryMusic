@@ -1,0 +1,211 @@
+/* --- Body --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: sans-serif;
+    color: #eee;
+    overflow-x: hidden;
+}
+
+/* --- Header --- */
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background-color: #222;
+}
+
+.nave-left img {
+    height: 40px;
+    width: auto;
+}
+
+.nave-center {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nave-right {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+/* --- Secciones --- */
+.store-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.section-divider {
+    margin: 15px 0 25px;
+    border: none;
+    border-top: 1px solid #444;
+}
+
+/* --- Desplazar Discos ---*/
+.carousel-container {
+    width: 100%;
+    position: relative;
+}
+
+.desplazardiscos {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    cursor: grab;
+    
+    scroll-snap-type: x mandatory;
+    
+    -webkit-overflow-scrolling: touch;
+}
+
+.desplazardiscos::-webkit-scrollbar {
+    height: 5px;
+}
+
+.desplazardiscos::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 15px;
+    width: max-content;
+}
+
+/* --- Tarjeta de Producto --- */
+.product-card {
+    width: 180px;
+    flex: 0 0 180px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 2px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #333;
+}
+
+.product-tag {
+    display: block;
+    color: #5aa9ff;
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.product-title {
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: normal;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* --- Ajustes Responsive --- */
+@media (max-width: 600px) {
+    .product-card {
+        width: 160px;
+        flex: 0 0 160px;
+    }
+    .product-card img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* --- Pie de página --- */
+.pie-pagina {
+    background-color: #111;
+    padding: 60px 20px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+.footer-section h3, .footer-section h4 {
+    color: #5aa9ff;
+    margin-bottom: 20px;
+}
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.6;
+}
+.footer-section ul { list-style: none; }
+.footer-section a { color: #bbb; text-decoration: none; }
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    font-size: 12px;
+    color: #666;
+}
+
+/* --- Barra de busqueda ---*/
+.search-container {
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+#main-search {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+    outline: none;
+}
+
+#main-search:focus {
+    border-color: #5aa9ff;
+    box-shadow: 0 0 5px rgba(90, 169, 255, 0.5);
+}
+
+

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="musica.css">
+    <link rel="icon" href="Images/icons/QuarryMusic.png" type="image/png">
+    <title>Quarry: Tienda de Vinilos y CDs - Guatemala</title>
+</head>
+<body> 
+    <header class="navegacion">
+        <div class="nave-left">
+            <a href="index.html">
+            <img src="Images/icons/QuarryMusic.png" alt="Quarry">
+            </a>
+        </div>
+
+    <div class="nave-center">
+        <div class="search-container">
+            <input type="text" id="main-search" placeholder="¿Qué disco buscas?" onkeyup="ejecutarBusqueda()">
+        </div>
+    </div>
+
+        <div class="nave-right">
+
+            <a href="login.html">
+            <img src="Images/icons/User Male.png" alt="Usuario" class="icon">
+            </a>
+
+            <a href="carrito.html">
+            <img src="Images/icons/Shopping Cart.png" alt="Carrito" class="icon">
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección #1: Preventas-->
+    <section class="store-section">
+        <h2 class="section-title">PREVENTAS</h2>
+        <hr class="section-divider">
+
+        <div class="carousel-container desplazardiscos">
+            <div class="carousel-track">
+
+                <!--#1-->
+                <div class="product-card">
+                    <a href="producto.html?id=rubber-soul" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/RubberSoul.jpg" alt="The Beatles - Rubber Soul">
+                    <span class="product-tag">[PREVENTA]</span>
+                    <p class="product-title">The Beatles: Rubber Soul</p>
+                    <p class="product-price">Q600.00</p>
+                    </a>
+                </div>
+
+                <!--#2-->
+                <div class="product-card">
+                    <a href="producto.html?id=layla-lovesongs" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/LaylaSongs.jpg" alt="Derek and the Dominos - Layla">
+                    <span class="product-tag">[PREVENTA]</span>
+                    <p class="product-title">Derek and the Dominos: Layla</p>
+                    <p class="product-price">Q600.00</p>
+                    </a>
+                </div>
+
+                <!--#3-->
+                <div class="product-card">
+                    <a href="producto.html?id=desintegration" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Desintegration.jpg" alt="The Cure - Desintegration">
+                    <span class="product-tag">[PREVENTA]</span>
+                    <p class="product-title">The Cure: Desintegration</p>
+                    <p class="product-price">Q500.00</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección #2: Los más vendidos -->
+    <section class="store-section">
+        <h2 class="section-title">¡LOS MÁS VENDIDOS!</h2>
+        <hr class="section-divider">
+        
+        <div class="carousel-container desplazardiscos">
+            <div class="carousel-track">
+
+                <!--#1-->
+                <div class="product-card">
+                    <a href="producto.html?id=nirvana-mtv" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/NirMTV.jpg" alt="Nirvana">
+                    <p class="product-title">Nirvana: MTV Unplugged in New York</p>
+                    <p class="product-price">Q700.00</p>
+                    </a>
+                </div>
+
+                <!--#2-->
+                <div class="product-card">
+                    <a href="producto.html?id=help" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Help.jpg" alt="The Beatles">
+                    <p class="product-title">The Beatles: Help!</p>
+                    <p class="product-price">Q800.00</p>
+                    </a>
+                </div>
+
+                <!--#3-->
+                <div class="product-card">
+                    <a href="producto.html?id=wish" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Wish.jpg" alt="The Cure">
+                    <p class="product-title">The Cure: Wish</p>
+                    <p class="product-price">Q700</p>
+                    </a>
+                </div>
+
+                <!--#4-->
+                <div class="product-card">
+                    <a href="producto.html?id=ahi-vamos" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/AhiVamos.jpg" alt="Gustavo Cerati">
+                    <p class="product-title">Gustavo Cerati: Ahi Vamos</p>
+                    <p class="product-price">Q700</p>
+                    </a>
+                </div>
+
+                <!--#5-->
+                <div class="product-card">
+                    <a href="producto.html?id=soyokaze" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Soyokaze.jpg" alt="Lamp">
+                    <p class="product-title">Lamp: Soyokaze Apartment Room 201</p>
+                    <p class="product-price">Q650</p>
+                    </a>
+                </div>
+
+                <!--#6-->
+                <div class="product-card">
+                    <a href="producto.html?id=sixpence-none" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/SixpenceNoneTheRicher.jpg" alt="Sixpence None The Richer">
+                    <p class="product-title">Sixpence None The Richer: Sixpence None The Richer</p>
+                    <p class="product-price">Q750</p>
+                    </a>
+                </div>
+
+                <!--#7-->
+                <div class="product-card">
+                    <a href="producto.html?id=comfort-musica" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/StereoMTV.jpg" alt="Soda Stereo">
+                    <p class="product-title">Soda Stereo: Comfort y Música Para Volar</p>
+                    <p class="product-price">Q750</p>
+                    </a>
+                </div>
+
+                <!--#8-->
+                <div class="product-card">
+                    <a href="producto.html?id=revolver" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Revolver.jpg" alt="The Beatles">
+                    <p class="product-title">The Beatles: Revolver</p>
+                    <p class="product-price">Q800</p>
+                    </a>
+                </div>     
+                
+                <!--#9-->
+                <div class="product-card">
+                    <a href="producto.html?id=siempre-hoy" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/SiempreEsHoy.jpg" alt="Gustavo Cerati">
+                    <p class="product-title">Gustavo Cerati: Siempre es Hoy</p>
+                    <p class="product-price">Q800</p>
+                    </a>
+                </div>   
+
+                <!--#10-->
+                <div class="product-card">
+                    <a href="producto.html?id=mess" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Mess.jpg" alt="Sixpence None The Richer">
+                    <p class="product-title">Sixpence None The Richer: This Beautiful Mess</p>
+                    <p class="product-price">Q750</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección #3: Descuentos -->
+    <section class="store-section">
+        <h2 class="section-title">DESCUENTOS</h2>
+        <hr class="section-divider">
+        
+        <div class="carousel-container desplazardiscos">
+            <div class="carousel-track">
+
+                <!--#1-->
+                <div class="product-card">
+                    <a href="producto.html?id=clapton-mtv" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/ClaptonMTV.jpg" alt="Eric Clapton">
+                    <span class="product-tag">OFERTA</span>
+                    <p class="product-title">Eric Clapton: Unplugged Deluxe</p>
+                    <p class="product-price">Q400.00        <s>Q700</s></p>
+                    </a>
+                </div>
+
+                <!--#2-->
+                <div class="product-card">
+                    <a href="producto.html?id=still-blues" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Moore.jpg" alt="Gary Moore">
+                    <span class="product-tag">OFERTA</span>
+                    <p class="product-title">Gary Moore: Still Got the Blues</p>
+                    <p class="product-price">Q300.00        <s>Q600</s></p>
+                    </a>
+                </div>
+
+                <!--#3-->
+                <div class="product-card">
+                    <a href="producto.html?id=hard-night" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/A Hard Day's Night.jpg" alt="The Beatles">
+                    <span class="product-tag">OFERTA</span>
+                    <p class="product-title">The Bealtes: A Hard Day's Night</p>
+                    <p class="product-price">Q500       <s>Q900</s></p>
+                    </a>
+                </div>
+
+                <!--#4-->
+                <div class="product-card">
+                    <a href="producto.html?id=fatherless-widow" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/The Fatherless & The Widow.jpg" alt="Sixpence None The Richer">
+                    <span class="product-tag">OFERTA</span>
+                    <p class="product-title">Sixpence None The Richer: The Fatherless & The Widow</p>
+                    <p class="product-price">Q400       <s>Q700</s></p>
+                    </a>
+                </div>
+
+                <!--#5-->
+                <div class="product-card">
+                    <a href="producto.html?id=kiss-me" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Kiss Me, Kiss Me, Kiss Me.jpg" alt="The Cure">
+                    <span class="product-tag">OFERTA</span>
+                    <p class="product-title">The Cure: Kiss Me, Kiss Me, Kiss Me</p>
+                    <p class="product-price">Q500       <s>Q750</s></p>
+                    </a>
+                </div>
+
+                <!--#6-->
+                <div class="product-card">
+                    <a href="producto.html?id=peluson-milk" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Peluson Of Milk.jpg" alt="Luis Alberto Spinetta">
+                    <span class="product-tag">OFERTA</span>
+                    <p class="product-title">Luis Alberto Spinetta: Peluson Of Milk</p>
+                    <p class="product-price">Q450       <s>Q650</s></p>
+                    </a>
+                </div>
+
+                <!--#7-->
+                <div class="product-card">
+                    <a href="producto.html?id=flock-seagulls" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/A Flock of Seagulls.jpg" alt="A Flock of Seagulls">
+                    <span class="product-tag">OFERTA</span>
+                    <p class="product-title">A Flock of Seagulls: A Flock of Seagulls</p>
+                    <p class="product-price">Q550       <s>Q800</s></p>
+                    </a>
+                </div>
+
+                <!--#8-->
+                <div class="product-card">
+                    <a href="producto.html?id=sgt-peppers" style="text-decoration: none; color: inherit;">
+                    <img src="Images/Albums/Sgt. Pepper's Lonely Hearts Club Band.jpg" alt="The Beatles">
+                    <span class="product-tag">OFERTA</span>
+                    <p class="product-title">The Beatles: Sgt. Pepper's Lonely Hearts Club Band</p>
+                    <p class="product-price">Q600       <s>Q800</s></p>
+                    </a>
+                </div>     
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección #4: Accesorios -->
+    <section class="store-section">
+        <h2 class="section-title">ACCESORIOS</h2>
+        <hr class="section-divider">
+        
+        <div class="carousel-container desplazardiscos">
+            <div class="carousel-track">
+
+                <!--#1-->
+                <div class="product-card">
+                    <a href="producto.html?id=ortofon" style="text-decoration: none; color: inherit;">
+                    <img src="Images/accesorios/Ortofon.webp" alt="Accesorio">
+                    <p class="product-title">Ortofon HiFi Accessory Pack</p>
+                    <p class="product-price">Q250.00</p>
+                    </a>
+                </div>
+
+                <!--#2-->
+                <div class="product-card">
+                    <a href="producto.html?id=zomo" style="text-decoration: none; color: inherit;">
+                    <img src="Images/accesorios/Zomo.webp" alt="Accesorio">
+                    <p class="product-title">Zomo VBC-01 Carbon Fiber Brush</p>
+                    <p class="product-price">Q100.00</p>
+                    </a>
+                </div>
+
+                <!--#3-->
+                <div class="product-card">
+                    <a href="producto.html?id=projectclean" style="text-decoration: none; color: inherit;">
+                    <img src="Images/accesorios/Clean.webp" alt="Accesorio">
+                    <p class="product-title">Pro-Ject Clean It Stylus Brush</p>
+                    <p class="product-price">Q200</p>
+                    </a>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página-->
+    <footer class="pie-pagina">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Quarry Music</h3>
+            <p>¡La mejor selección de vinilos y CDs en Guatemala!</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>📍   Ciudad de Guatemala</p>
+            <p>✉️ QuarryMusic@email.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026, Quarry Music. Todos los derechos reservados.
+    </div>
+</footer>
+    <script>
+function ejecutarBusqueda() {
+    // 1. Obtener lo que el usuario escribió
+    let input = document.getElementById('main-search').value.toLowerCase();
+    
+    // 2. Seleccionar todas las tarjetas de productos
+    let tarjetas = document.getElementsByClassName('product-card');
+
+    // 3. Recorrer cada tarjeta
+    for (let i = 0; i < tarjetas.length; i++) {
+        // Obtenemos el texto del título dentro de la tarjeta
+        let titulo = tarjetas[i].querySelector('.product-title').innerText.toLowerCase();
+        
+        // 4. Si el título incluye lo que escribimos, se queda. Si no, se oculta.
+        if (titulo.includes(input)) {
+            tarjetas[i].style.display = "block";
+        } else {
+            tarjetas[i].style.display = "none";
+        }
+    }
+}
+        </script>
+    </body>
+</html>
+

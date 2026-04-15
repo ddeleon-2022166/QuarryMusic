@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.nav-simple {
+    padding: 20px 5%;
+}
+
+.nav-simple a {
+    color: #5aa9ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contenedor-producto {
+    max-width: 1100px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 50px;
+    padding: 20px;
+}
+
+/* Imagen */
+.img-principal {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 4px;
+}
+
+/* Información */
+.categoria {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.titulo-detalle {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.precio-detalle {
+    font-size: 24px;
+    color: #5aa9ff;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Controles */
+.seleccion-cantidad {
+    margin-bottom: 20px;
+}
+
+.input-cantidad {
+    background: #333;
+    border: 1px solid #444;
+    color: white;
+    padding: 8px;
+    width: 60px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.acciones-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-carrito {
+    background-color: transparent;
+    border: 2px solid #5aa9ff;
+    color: #5aa9ff;
+}
+
+.btn-carrito:hover {
+    background: #5aa9ff;
+    color: white;
+}
+
+.btn-comprar {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-comprar:hover {
+    background: #5aa9ff;
+    color: white;
+}
+
+/* Descripción */
+.descripcion h3 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.descripcion p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.descripcion ul {
+    margin-left: 20px;
+    color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-producto {
+        grid-template-columns: 1fr;
+    }
+    .producto-visual {
+        text-align: center;
+    }
+}
